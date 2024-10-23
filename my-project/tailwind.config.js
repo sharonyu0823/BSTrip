@@ -43,7 +43,6 @@ export default {
   theme: {
     container: {
       center: true,
-      // padding: '1.5rem',
     },
     colors: {
       'orange': '#F2784B',
@@ -54,7 +53,14 @@ export default {
       'gray-light': '#F5F5F5',
       'coffee': '#AE9393',
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        '20px': '20px',
+        '18px': '18px',
+        '16px': '16px',
+        '14px': '14px',
+      },
+    },
   },
   plugins: [],
 }
