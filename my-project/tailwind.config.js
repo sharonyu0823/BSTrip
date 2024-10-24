@@ -52,6 +52,7 @@ export default {
       'white': '#FFFFFF',
       'gray-light': '#F5F5F5',
       'coffee': '#AE9393',
+      'pink-light': '#F2D0C4',
     },
     extend: {
       fontSize: {
