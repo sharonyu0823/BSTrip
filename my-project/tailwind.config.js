@@ -60,9 +60,24 @@ export default {
         '18px': '18px',
         '16px': '16px',
         '14px': '14px',
+        '13px': '13px',
+        '12px': '12px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      const newUtilities = {
+        ".no-scrollbar::-webkit-scrollbar": {
+          display: "none",
+        },
+        ".no-scrollbar": {
+          "-ms-overflow-style": "none",
+          "scrollbar-width": "none",
+        },
+      };
+      addUtilities(newUtilities);
+    }
+  ],
 }
 
