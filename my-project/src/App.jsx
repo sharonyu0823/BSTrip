@@ -2,7 +2,7 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronLeft, faCircleCheck, faCircle, faChevronDown, faFontAwesome } from '@fortawesome/free-solid-svg-icons'
+import { faChevronLeft, faCircleCheck, faCircle, faChevronDown, faFontAwesome, faPersonWalking, faChevronRight, faCirclePlus } from '@fortawesome/free-solid-svg-icons'
 import "./App.css";
 
 function App() {
@@ -193,114 +193,123 @@ function App() {
           <div className='h-11 px-3 text-13px py-2 flex items-center justify-center text-nowrap'>第12天</div>
           <div className='h-11 px-3 text-13px py-2 flex items-center justify-center text-nowrap'>第13天</div>
         </div>
-        <div className='h-[calc(100vh-96px)] border-2 border-black'>
-        <div className="text-20px font-bold py-2 px-8">04/13 週六</div>
-          <div className='px-5 border-2 border-orange flex flex-col space-y-16'>
-            <div>
-              <div className="bg-pink-light rounded-md flex flex-row px-8 relative">
-                <div>
-                  <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
-                  <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
-                </div>
-                <div className='w-24 rounded-md border-2 border-black'></div>
-                <div className='ml-2.5 border-2 border-black'>
-                  <div className='text-12 py-1'>08:00</div>
-                  <div className='text-16 font-bold py-1'>四四南村</div>
-                  <div className='text-12 py-1'>停留時間01時00分</div>
-                </div>
-              </div>
+        <div className='h-[calc(100vh-96px)] pb-6 relative'>
+          <div className="text-20px font-bold py-2 px-8 ">04/13 週六</div>
+            <div className='px-5 flex flex-col h-[calc(100vh-168px)] overflow-y-auto no-scrollbar'>
+              {/* first */}
               <div>
-                <div className='border-black border-l-4 w-12'></div>
-
-              </div>
-            </div>
-            
-            <div>
-              <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                  <div>
+                    <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
+                    <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  </div>
+                  <div className='w-24 rounded-md border-2 border-black'></div>
+                  <div className='ml-2.5'>
+                    <div className='text-12 py-1'>08:00</div>
+                    <div className='text-16 font-bold py-1'>四四南村</div>
+                    <div className='text-12 py-1'>停留時間01時00分</div>
+                  </div>
+                </div>
                 <div>
-                  <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
-                  <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
-                </div>
-                <div className='w-24 rounded-md border-2 border-black'></div>
-                <div className='ml-2.5 border-2 border-black'>
-                  <div className='text-12 py-1'>08:00</div>
-                  <div className='text-16 font-bold py-1'>四四南村</div>
-                  <div className='text-12 py-1'>停留時間01時00分</div>
+                  <div className='ml-6 py-2.5 border-orange-bright border-l-2 border-dotted w-full float-start'>
+                    <div className='flex flex-row space-x-4 items-center ml-2'>
+                      <div className='text-16px'><FontAwesomeIcon icon={faPersonWalking} /></div>
+                      <div className='text-14px w-fit'>00時08分</div>
+                      <div className='text-16px text-center'><FontAwesomeIcon icon={faChevronRight} /></div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+              {/* second */}
+              <div>
+                <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                  <div>
+                    <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
+                    <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  </div>
+                  <div className='w-24 rounded-md border-2 border-black'></div>
+                  <div className='ml-2.5'>
+                    <div className='text-12 py-1'>08:00</div>
+                    <div className='text-16 font-bold py-1'>四四南村</div>
+                    <div className='text-12 py-1'>停留時間01時00分</div>
+                  </div>
+                </div>
                 <div>
-                  <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
-                  <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  <div className='ml-6 py-2.5 border-orange-bright border-l-2 border-dotted w-full float-start'>
+                    <div className='flex flex-row space-x-4 items-center ml-2'>
+                      <div className='text-16px'><FontAwesomeIcon icon={faPersonWalking} /></div>
+                      <div className='text-14px w-fit'>00時08分</div>
+                      <div className='text-16px text-center'><FontAwesomeIcon icon={faChevronRight} /></div>
+                    </div>
+                  </div>
                 </div>
-                <div className='w-24 rounded-md border-2 border-black'></div>
-                <div className='ml-2.5 border-2 border-black'>
-                  <div className='text-12 py-1'>08:00</div>
-                  <div className='text-16 font-bold py-1'>四四南村</div>
-                  <div className='text-12 py-1'>停留時間01時00分</div>
+              </div>
+              {/* third */}
+              <div>
+                <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                  <div>
+                    <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
+                    <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  </div>
+                  <div className='w-24 rounded-md border-2 border-black'></div>
+                  <div className='ml-2.5'>
+                    <div className='text-12 py-1'>08:00</div>
+                    <div className='text-16 font-bold py-1'>四四南村</div>
+                    <div className='text-12 py-1'>停留時間01時00分</div>
+                  </div>
+                </div>
+                <div>
+                  <div className='ml-6 py-2.5 border-orange-bright border-l-2 border-dotted w-full float-start'>
+                    <div className='flex flex-row space-x-4 items-center ml-2'>
+                      <div className='text-16px'><FontAwesomeIcon icon={faPersonWalking} /></div>
+                      <div className='text-14px w-fit'>00時08分</div>
+                      <div className='text-16px text-center'><FontAwesomeIcon icon={faChevronRight} /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* fourth */}
+              <div>
+                <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                  <div>
+                    <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
+                    <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  </div>
+                  <div className='w-24 rounded-md border-2 border-black'></div>
+                  <div className='ml-2.5'>
+                    <div className='text-12 py-1'>08:00</div>
+                    <div className='text-16 font-bold py-1'>四四南村</div>
+                    <div className='text-12 py-1'>停留時間01時00分</div>
+                  </div>
+                </div>
+                <div>
+                  <div className='ml-6 py-2.5 border-orange-bright border-l-2 border-dotted w-full float-start'>
+                    <div className='flex flex-row space-x-4 items-center ml-2'>
+                      <div className='text-16px'><FontAwesomeIcon icon={faPersonWalking} /></div>
+                      <div className='text-14px w-fit'>00時08分</div>
+                      <div className='text-16px text-center'><FontAwesomeIcon icon={faChevronRight} /></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* fifth */}
+              <div>
+                <div className="bg-pink-light rounded-md flex flex-row py-2 px-8 relative">
+                  <div>
+                    <div className='absolute -top-1 -left-1 fa-2x text-green-bright'><FontAwesomeIcon icon={faFontAwesome} /></div>
+                    <div className='text-white text-12px absolute top-2.5 left-1'>12</div>
+                  </div>
+                  <div className='w-24 rounded-md border-2 border-black'></div>
+                  <div className='ml-2.5'>
+                    <div className='text-12 py-1'>08:00</div>
+                    <div className='text-16 font-bold py-1'>四四南村</div>
+                    <div className='text-12 py-1'>停留時間01時00分</div>
+                  </div>
                 </div>
               </div>
             </div>
-            
           </div>
-
-        
-
-        </div>
-        {/* <div className="h-[calc(100vh-160px)] p-5 flex flex-col space-y-4">
-          <div>
-            <div className="text-16px mb-4">地點名稱</div>
-            <div className="bg-pink-light rounded-md">
-              <div className='flex justify-between justify-center p-5'>
-                <div className='text-14px text-center'>請輸入地點名稱</div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-16px mb-4">抵達時間</div>
-            <div className="bg-pink-light rounded-md flex flex-col">
-              <div className='flex justify-between justify-center p-5 border-b-2 border-coffee border-dotted'>
-                <div className='text-14px w-20 text-center'>系統規劃</div>
-                <div className='text-14px w-2/4 text-center -translate-x-2.5'>08:00</div>
-                <div className='text-14px w-1/4 text-center'><FontAwesomeIcon icon={faCircleCheck} /></div>
-              </div>
-              <div className='flex justify-between justify-center p-5'>
-                <div className='text-14px w-20 text-center text-coffee pt-1'>手動設定</div>
-                <div className='text-14px w-1/3 text-center border-2 border-coffee flex flex-row justify-center justify-around rounded-full py-1 px-4'>
-                  <div className='w-2/3'>18:00</div>
-                  <div className='w-1/3'><FontAwesomeIcon icon={faChevronDown} /></div>
-                </div>
-                <div className='text-14px w-1/4 text-center text-white pt-1'><FontAwesomeIcon icon={faCircle} /></div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div className="text-16px mb-4">此景點</div>
-            <div className="bg-pink-light rounded-md flex flex-col">
-              <div className='flex justify-between justify-center p-5 border-b-2 border-coffee border-dotted'>
-                <div className='text-14px w-20 text-center translate-y-4'>停留時間</div>
-                <div className='text-14px w-1/3 text-center border-2 border-coffee flex flex-row justify-center justify-around rounded-full py-1 px-4'>
-                  <div className='w-2/3'>00時00分</div>
-                  <div className='w-1/3 translate-y-2.5'><FontAwesomeIcon icon={faChevronDown} /></div>
-                </div>
-                <div className='text-14px w-1/4 text-center translate-y-4'><FontAwesomeIcon icon={faCircleCheck} /></div>
-              </div>
-              <div className='flex justify-between justify-center p-5'>
-                <div className='text-14px w-20 text-center text-coffee pt-1'>離開時間</div>
-                <div className='text-14px w-1/3 text-center border-2 border-coffee flex flex-row justify-center justify-around rounded-full py-1 px-4'>
-                  <div className='w-2/3'>18:00</div>
-                  <div className='w-1/3'><FontAwesomeIcon icon={faChevronDown} /></div>
-                </div>
-                <div className='text-14px w-1/4 text-center text-white pt-1'><FontAwesomeIcon icon={faCircle} /></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="h-16 flex justify-center px-5 pb-5">
-          <div className="text-18px text-center rounded-full text-white bg-orange py-3.5 w-full h-12">儲存</div>
-        </div> */}
+          <div className='absolute bottom-1 right-4 fa-3x text-orange'><FontAwesomeIcon icon={faCirclePlus} /></div>
       </div>
     </>
     // == 每日行程頁 end ==
