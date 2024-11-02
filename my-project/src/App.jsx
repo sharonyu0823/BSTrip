@@ -11,7 +11,6 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Questionnaire />} />
-
           <Route path="/itinerary/">
             <Route index path="" element={<ItineraryMain />} />
             <Route path="add" element={<ItineraryAdd />} />

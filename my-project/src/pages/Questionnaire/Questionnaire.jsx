@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 
 export default class Questionnaire extends Component {
   render() {
@@ -8,9 +9,7 @@ export default class Questionnaire extends Component {
         // == 問券頁 start ==
         <>
           <div className="container h-screen">
-            <div className="h-12 flex flex-row-reverse items-center">
-              <p className="w-fit mr-4 text-12px font-bold">略過</p>
-            </div>
+            <div className="h-12 flex flex-row-reverse items-center"></div>
             <div className="h-[calc(100vh-112px)] p-5 flex flex-col space-y-4">
               <div className="flex flex-col">
                 <div className="text-20px font-bold pr-1.5">歡迎使用BSTrip</div>
@@ -35,7 +34,7 @@ export default class Questionnaire extends Component {
               </div>
             </div>
             <div className="h-16 flex justify-center px-5 pb-5">
-            <div className="text-18px text-center rounded-full text-white bg-orange py-3.5 w-full h-12">下一步</div>
+            <Link className="text-18px text-center rounded-full text-white bg-orange py-3.5 w-full h-12" to="/itinerary">下一步</Link>
             </div>
           </div>
         </>
