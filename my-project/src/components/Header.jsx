@@ -1,11 +1,10 @@
+// Header
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
 function Header(props) {
-  console.log('lala header props', props);
-  
   // 回上一頁
   function handleGoBack() {
     const hasPreviousPage = history.length > 1;

@@ -39,7 +39,7 @@ export default {
         ".no-scrollbar": {
           "-ms-overflow-style": "none",
           "scrollbar-width": "none",
-        },
+        }
       };
       addUtilities(newUtilities);
     }

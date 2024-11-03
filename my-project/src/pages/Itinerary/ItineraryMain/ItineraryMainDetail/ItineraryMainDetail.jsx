@@ -1,8 +1,20 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFontAwesome, faPersonWalking, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import { useParams } from "react-router-dom";
+
+const DetailData = [
+    {id: '01', content: '四四南村1'},
+		{id: '02', content: '四四南村2'},
+		{id: '03', content: '四四南村3'}
+]
 
 function ItineraryMainDetail() {
+	const params = useParams();
+	const findResult = DetailData.find((detailObj) => {
+		return detailObj.id === params.id;
+	})
+
   return (
     <>
       <div className='h-[calc(100vh-96px)] pb-6 relative'>
@@ -18,7 +30,7 @@ function ItineraryMainDetail() {
           <div className='w-24 rounded-md border-2 border-black'></div>
             <div className='ml-2.5'>
                 <div className='text-12 py-1'>08:00</div>
-                <div className='text-16 font-bold py-1'>四四南村</div>
+                <div className='text-16 font-bold py-1'>{findResult.content}</div>
                 <div className='text-12 py-1'>停留時間01時00分</div>
             </div>
           </div>
