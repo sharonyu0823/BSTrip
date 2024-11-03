@@ -1,9 +1,9 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Questionnaire from './pages/Questionnaire/Questionnaire'
-import ItineraryMain from './pages/Itinerary/ItineraryMain'
-import ItineraryAdd from './pages/Itinerary/ItineraryAdd'
-import ItineraryEdit from './pages/Itinerary/ItineraryEdit'
+import ItineraryMain from './pages/Itinerary/ItineraryMain/ItineraryMain'
+import ItineraryAdd from './pages/Itinerary/ItineraryAdd/ItineraryAdd'
+import ItineraryEdit from './pages/Itinerary/ItineraryEdit/ItineraryEdit'
 
 function App() {
   return (
