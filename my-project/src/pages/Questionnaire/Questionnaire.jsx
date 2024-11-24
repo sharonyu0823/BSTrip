@@ -3,14 +3,19 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 function Questionnaire() {
+  const state = useSelector( state => state.user);
+  console.log('lala Quest state', state);
+  
   return (
     <>
       <div className="container h-screen">
-        <div className="h-12 flex flex-row-reverse items-center"></div>
+        <div className="h-12 flex flex-row"></div>
         <div className="h-[calc(100vh-112px)] p-5 flex flex-col space-y-4">
           <div className="flex flex-col">
+            <div className="text-20px font-bold pr-1.5">Hi, { state.profile.name}</div>
             <div className="text-20px font-bold pr-1.5">歡迎使用BSTrip</div>
             <div className="text-14px text-coffee">寫基本設定，推薦內容更精準!</div>
           </div>
